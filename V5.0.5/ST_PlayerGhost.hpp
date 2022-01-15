@@ -1,0 +1,11 @@
+#ifndef UE4SS_SDK_ST_PlayerGhost_HPP
+#define UE4SS_SDK_ST_PlayerGhost_HPP
+
+class UST_PlayerGhost
+{
+    bool isAlive_8_171D9FE74ED4D9727B748E8EF9B181B6;
+    FVector Location_2_DF1E4D51414833660A89E88B06E175A2;
+    int32 Currency_6_38672B2D40070C491C4D5E9D66EAFE46;
+}
+
+#endif

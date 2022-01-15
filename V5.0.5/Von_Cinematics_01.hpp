@@ -1,0 +1,29 @@
+#ifndef UE4SS_SDK_Von_Cinematics_01_HPP
+#define UE4SS_SDK_Von_Cinematics_01_HPP
+
+class AVon_Cinematics_01_C : UCharacter
+{
+    FPointerToUberGraphFrame UberGraphFrame;
+    UDecalComponent* Decal;
+    UBillboardComponent* LocationVFX;
+    UStaticMeshComponent* Sword1;
+    UStaticMeshComponent* Sword;
+    UVon_Cinematics_AnimBP_C* AnimBP;
+
+    void OnNotifyEnd_E44A817F4839924866C7D2BC3DE9EB83(FName NotifyName);
+    void OnNotifyBegin_E44A817F4839924866C7D2BC3DE9EB83(FName NotifyName);
+    void OnInterrupted_E44A817F4839924866C7D2BC3DE9EB83(FName NotifyName);
+    void OnBlendOut_E44A817F4839924866C7D2BC3DE9EB83(FName NotifyName);
+    void OnCompleted_E44A817F4839924866C7D2BC3DE9EB83(FName NotifyName);
+    void OnNotifyEnd_FB934FD0487362C2A9042CA3936375D4(FName NotifyName);
+    void OnNotifyBegin_FB934FD0487362C2A9042CA3936375D4(FName NotifyName);
+    void OnInterrupted_FB934FD0487362C2A9042CA3936375D4(FName NotifyName);
+    void OnBlendOut_FB934FD0487362C2A9042CA3936375D4(FName NotifyName);
+    void OnCompleted_FB934FD0487362C2A9042CA3936375D4(FName NotifyName);
+    void ReceiveBeginPlay();
+    void Cutscene();
+    void VonTakeOff();
+    void ExecuteUbergraph_Von_Cinematics_01(int32 EntryPoint, FVector CallFunc_K2_GetComponentLocation_ReturnValue, UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, OnMontagePlayDelegate__DelegateSignature K2Node_CreateDelegate_OutputDelegate, FName K2Node_CustomEvent_NotifyName_9, FName K2Node_CustomEvent_NotifyName_8, OnMontagePlayDelegate__DelegateSignature K2Node_CreateDelegate_OutputDelegate_1, FName K2Node_CustomEvent_NotifyName_7, OnMontagePlayDelegate__DelegateSignature K2Node_CreateDelegate_OutputDelegate_2, FName K2Node_CustomEvent_NotifyName_6, OnMontagePlayDelegate__DelegateSignature K2Node_CreateDelegate_OutputDelegate_3, FName K2Node_CustomEvent_NotifyName_5, OnMontagePlayDelegate__DelegateSignature K2Node_CreateDelegate_OutputDelegate_4, FName Temp_name_Variable, OnMontagePlayDelegate__DelegateSignature K2Node_CreateDelegate_OutputDelegate_5, FName K2Node_CustomEvent_NotifyName_4, FName K2Node_CustomEvent_NotifyName_3, OnMontagePlayDelegate__DelegateSignature K2Node_CreateDelegate_OutputDelegate_6, FName K2Node_CustomEvent_NotifyName_2, OnMontagePlayDelegate__DelegateSignature K2Node_CreateDelegate_OutputDelegate_7, FName K2Node_CustomEvent_NotifyName_1, OnMontagePlayDelegate__DelegateSignature K2Node_CreateDelegate_OutputDelegate_8, FName K2Node_CustomEvent_NotifyName, OnMontagePlayDelegate__DelegateSignature K2Node_CreateDelegate_OutputDelegate_9, FName Temp_name_Variable_1, UAnimInstance* CallFunc_GetAnimInstance_ReturnValue, UVon_Cinematics_AnimBP_C* K2Node_DynamicCast_AsVon_Cinematics_Anim_BP, bool K2Node_DynamicCast_bSuccess, UPlayMontageCallbackProxy* CallFunc_CreateProxyObjectForPlayMontage_ReturnValue, bool CallFunc_IsValid_ReturnValue, FVector CallFunc_K2_GetComponentLocation_ReturnValue_1, UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue_1, UPlayMontageCallbackProxy* CallFunc_CreateProxyObjectForPlayMontage_ReturnValue_1, bool CallFunc_IsValid_ReturnValue_1);
+}
+
+#endif

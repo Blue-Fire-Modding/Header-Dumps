@@ -1,0 +1,39 @@
+#ifndef UE4SS_SDK_BP_VesselDoor_Sanctuary_HPP
+#define UE4SS_SDK_BP_VesselDoor_Sanctuary_HPP
+
+class ABP_VesselDoor_Sanctuary_C : UDoor_BP_C
+{
+    FPointerToUberGraphFrame UberGraphFrame;
+    UBoxComponent* BoxSanctuary;
+    UStaticMeshComponent* SanctuaryBase;
+    UParticleSystemComponent* P_Shine_Sanctuary;
+    UStaticMeshComponent* SM_SanctuaryStone;
+    USkeletalMeshComponent* SK_SanctuaryStone;
+    float Cutscene_Animation_Scale_7A8EE7E44AAF6185AA9446A29D5A6AED;
+    TEnumAsByte<ETimelineDirection::Type> Cutscene_Animation__Direction_7A8EE7E44AAF6185AA9446A29D5A6AED;
+    UTimelineComponent* Cutscene Animation;
+    bool Debug OpenDoor;
+    UMaterialInstanceDynamic* Material Door;
+    FString ID VesselDoor;
+    UMaterialInstanceDynamic* Glow;
+    ANPCBound_C* NPC;
+
+    void Cutscene Animation__FinishedFunc();
+    void Cutscene Animation__UpdateFunc();
+    void Cutscene Animation__VFX Spawn__EventFunc();
+    void OnNotifyEnd_66F88FBE459EA8D2FAE2D4ABCC9C43B1(FName NotifyName);
+    void OnNotifyBegin_66F88FBE459EA8D2FAE2D4ABCC9C43B1(FName NotifyName);
+    void OnInterrupted_66F88FBE459EA8D2FAE2D4ABCC9C43B1(FName NotifyName);
+    void OnBlendOut_66F88FBE459EA8D2FAE2D4ABCC9C43B1(FName NotifyName);
+    void OnCompleted_66F88FBE459EA8D2FAE2D4ABCC9C43B1(FName NotifyName);
+    void InpActEvt_PC_Interact_K2Node_InputActionEvent_1(FKey Key);
+    void InpActEvt_Gamepad_Interact_Shield_K2Node_InputActionEvent_0(FKey Key);
+    void BndEvt__BoxSanctuary_K2Node_ComponentBoundEvent_2_ComponentBeginOverlapSignature__DelegateSignature(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+    void BndEvt__BoxSanctuary_K2Node_ComponentBoundEvent_0_ComponentEndOverlapSignature__DelegateSignature(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+    void ReceiveBeginPlay();
+    void Back();
+    void OnRemovePickupUI(bool bRemove);
+    void ExecuteUbergraph_BP_VesselDoor_Sanctuary(int32 EntryPoint, FName K2Node_CustomEvent_NotifyName_2, OnMontagePlayDelegate__DelegateSignature K2Node_CreateDelegate_OutputDelegate, FName K2Node_CustomEvent_NotifyName_1, OnMontagePlayDelegate__DelegateSignature K2Node_CreateDelegate_OutputDelegate_1, FName K2Node_CustomEvent_NotifyName, OnMontagePlayDelegate__DelegateSignature K2Node_CreateDelegate_OutputDelegate_2, FName Temp_name_Variable, FVector CallFunc_Conv_FloatToVector_ReturnValue, FKey K2Node_InputActionEvent_Key_1, FKey K2Node_InputActionEvent_Key, Finished__DelegateSignature K2Node_CreateDelegate_OutputDelegate_3, bool CallFunc_IsRobiValid_ReturnValue, OnRemovePickupUI__DelegateSignature K2Node_CreateDelegate_OutputDelegate_4, FName K2Node_CustomEvent_NotifyName_4, APawn* CallFunc_GetPlayerPawn_ReturnValue, OnMontagePlayDelegate__DelegateSignature K2Node_CreateDelegate_OutputDelegate_5, UPrimitiveComponent* K2Node_ComponentBoundEvent_OverlappedComponent_1, AActor* K2Node_ComponentBoundEvent_OtherActor_1, UPrimitiveComponent* K2Node_ComponentBoundEvent_OtherComp_1, int32 K2Node_ComponentBoundEvent_OtherBodyIndex_1, bool K2Node_ComponentBoundEvent_bFromSweep, const FHitResult K2Node_ComponentBoundEvent_SweepResult, UPrimitiveComponent* K2Node_ComponentBoundEvent_OverlappedComponent, AActor* K2Node_ComponentBoundEvent_OtherActor, UPrimitiveComponent* K2Node_ComponentBoundEvent_OtherComp, int32 K2Node_ComponentBoundEvent_OtherBodyIndex, bool CallFunc_EqualEqual_ObjectObject_ReturnValue, bool CallFunc_IsRobiValid_ReturnValue_1, APawn* CallFunc_GetPlayerPawn_ReturnValue_1, bool Temp_bool_Variable, bool CallFunc_EqualEqual_ObjectObject_ReturnValue_1, bool CallFunc_Not_PreBool_ReturnValue, UPlayerController* CallFunc_GetPlayerController_ReturnValue, UPlayerController* CallFunc_GetPlayerController_ReturnValue_1, UPlayerController* CallFunc_GetPlayerController_ReturnValue_2, FString CallFunc_CheckState_Same_ID, bool CallFunc_CheckState_Used, bool CallFunc_HasItem_Success, int32 CallFunc_HasItem_ItemAmount, float CallFunc_Cutscene_OutputPin, bool CallFunc_IsInViewport_ReturnValue, FVector CallFunc_K2_GetComponentLocation_ReturnValue, UParticleSystemComponent* CallFunc_SpawnEmitterAtLocation_ReturnValue, float CallFunc_Cutscene_OutputPin_1, UPickUp_Action_UI_C* CallFunc_Create_ReturnValue, FName K2Node_CustomEvent_NotifyName_3, bool CallFunc_IsRobiValid_ReturnValue_2, FVector CallFunc_K2_GetActorLocation_ReturnValue, FVector CallFunc_K2_GetComponentLocation_ReturnValue_1, float CallFunc_BreakVector_X, float CallFunc_BreakVector_Y, float CallFunc_BreakVector_Z, UPlayMontageCallbackProxy* CallFunc_CreateProxyObjectForPlayMontage_ReturnValue, FVector CallFunc_GetSocketLocation_ReturnValue, FHitResult CallFunc_K2_SetWorldLocation_SweepHitResult, bool CallFunc_IsValid_ReturnValue, FVector CallFunc_K2_GetActorLocation_ReturnValue_1, FRotator CallFunc_FindLookAtRotation_ReturnValue, FVector CallFunc_K2_GetActorLocation_ReturnValue_2, float CallFunc_BreakRotator_Roll, float CallFunc_BreakRotator_Pitch, float CallFunc_BreakRotator_Yaw, float CallFunc_BreakVector_X_1, float CallFunc_BreakVector_Y_1, float CallFunc_BreakVector_Z_1, FRotator CallFunc_MakeRotator_ReturnValue, FVector CallFunc_MakeVector_ReturnValue, FHitResult CallFunc_K2_SetActorLocationAndRotation_SweepHitResult, bool CallFunc_K2_SetActorLocationAndRotation_ReturnValue, bool CallFunc_HasItem_Success_1, int32 CallFunc_HasItem_ItemAmount_1, APawn* CallFunc_GetPlayerPawn_ReturnValue_2, UPlayer_Character_BP_C* K2Node_DynamicCast_AsPlayer_Character_BP, bool K2Node_DynamicCast_bSuccess, UPlayerController* CallFunc_GetPlayerController_ReturnValue_3, UPlayerController* CallFunc_GetPlayerController_ReturnValue_4, const FTransform CallFunc_GetTransform_ReturnValue, AActor* CallFunc_BeginDeferredActorSpawnFromClass_ReturnValue, const TArray<UAkAudioEvent*>& K2Node_MakeArray_Array, ANPCBound_C* CallFunc_FinishSpawningActor_ReturnValue, int32 CallFunc_PostEventAtLocation_ReturnValue, int32 CallFunc_PostEventAtLocation_ReturnValue_1, UMaterialInstanceDynamic* CallFunc_CreateDynamicMaterialInstance_ReturnValue, bool CallFunc_IsRobiValid_ReturnValue_3, OnMontagePlayDelegate__DelegateSignature K2Node_CreateDelegate_OutputDelegate_6, bool K2Node_Event_bRemove, bool CallFunc_IsRobiValid_ReturnValue_4, bool CallFunc_IsInViewport_ReturnValue_1);
+}
+
+#endif
