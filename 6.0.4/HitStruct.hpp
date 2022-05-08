@@ -1,0 +1,13 @@
+#ifndef UE4SS_SDK_HitStruct_HPP
+#define UE4SS_SDK_HitStruct_HPP
+
+struct FHitStruct
+{
+    FVector Location_10_2394DC5D48CA1C5D0ED5F5B92E847FBC;
+    FVector ImpactPoint_9_8CEE20EC433044E45C782FA9BFEFCD70;
+    class AActor* HitActor_7_24AA119148C569D2DB425EB4656BEB53;
+    class UActorComponent* HitComponent_8_D3EAABAB458ED8ABE053D0982DD78590;
+
+};
+
+#endif

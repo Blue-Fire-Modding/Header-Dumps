@@ -1,0 +1,95 @@
+#ifndef UE4SS_SDK_Void_Gate_HPP
+#define UE4SS_SDK_Void_Gate_HPP
+
+class AVoid_Gate_C : public AInteractionMaster_C
+{
+    FPointerToUberGraphFrame UberGraphFrame;
+    class UArrowComponent* Player Location;
+    class UAkComponent* Ak;
+    class UParticleSystemComponent* P_Void_Active;
+    class UParticleSystemComponent* P_Void_Idle;
+    class UMaterialBillboardComponent* MB_Glow;
+    class USkeletalMeshComponent* SM_VoidStone;
+    class UBoxComponent* Box1;
+    class UPointLightComponent* PointLight;
+    float Fade_Color_Lerp_Color_6B489A5348FAED9D05BE6A855E3143F2;
+    TEnumAsByte<ETimelineDirection::Type> Fade_Color__Direction_6B489A5348FAED9D05BE6A855E3143F2;
+    class UTimelineComponent* Fade Color;
+    float VoidBlack_Light_Intensity_08E361ED4C8FD105E6587A8640732F6A;
+    float VoidBlack_Glow_08E361ED4C8FD105E6587A8640732F6A;
+    float VoidBlack_Mesh_Size_08E361ED4C8FD105E6587A8640732F6A;
+    float VoidBlack_Darkness_08E361ED4C8FD105E6587A8640732F6A;
+    TEnumAsByte<ETimelineDirection::Type> VoidBlack__Direction_08E361ED4C8FD105E6587A8640732F6A;
+    class UTimelineComponent* VoidBlack;
+    class AStaticMeshActor* Von Statue;
+    class AVoid_Location_C* TargetVoid;
+    class UVoidStone_AnimBP_C* Anim;
+    bool Completed;
+    FName LevelName;
+    TEnumAsByte<Areas::Type> Area;
+    FTransform DestinationTransform;
+    class UMaterialInstanceDynamic* MatVoidCenter;
+    FLinearColor Color Completed;
+    class UMaterialInstanceDynamic* MatGlow;
+    FLinearColor Color Base;
+    FText VoidName;
+    class UAkComponent* Ak_Sound;
+    int32 Difficulty;
+    FVoid_Gate_CEvent Event;
+    void Event();
+    FLinearColor DifficultyColor;
+    class UTexture2D* Image;
+    class ADoor_BP_C* Door;
+    class UMaterialInstanceDynamic* Statue Eyes;
+    class UVoidUI_C* VoidUI;
+    FVoid_Gate_CStingerTrigger StingerTrigger;
+    void StingerTrigger();
+    FVoid_Gate_CShouldOpenDoor ShouldOpenDoor;
+    void ShouldOpenDoor(class AVoid_Gate_C* Gate);
+    bool IsDLC;
+    bool IsChainsBreaking;
+    class ULevelSequence* ChainSequence;
+    TEnumAsByte<VoidMusicType::Type> VoidTypeEnterSound;
+    bool IsOldVoid;
+    class AActor* OldFence;
+    class AActor* GodRay;
+    FLinearColor Color DLC;
+    TArray<class AStaticMeshActor*> GlowMeshes;
+    FVoid_Gate_COnCompleted OnCompleted;
+    void OnCompleted(bool IsDLC, bool IsChainsBreaking);
+    class AMusic_Trigger_Enter_Exit_2_C* Music Trigger;
+
+    void UserConstructionScript();
+    void VoidBlack__FinishedFunc();
+    void VoidBlack__UpdateFunc();
+    void Fade Color__FinishedFunc();
+    void Fade Color__UpdateFunc();
+    void ReceiveBeginPlay();
+    void PressButton();
+    void BndEvt__Box1_K2Node_ComponentBoundEvent_0_ComponentBeginOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+    void Check State Door();
+    void BndEvt__Box1_K2Node_ComponentBoundEvent_1_ComponentEndOverlapSignature__DelegateSignature(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
+    void ReverseVoid();
+    void Set Completed();
+    void ResumeColision();
+    void End();
+    void VFX Show();
+    void VFX Hide();
+    void Wwise Void Loop(bool Play);
+    void RemoveVoidUI();
+    void ReaddVoidUI();
+    void OverlapEndClean();
+    void Custom Press Button(FName Level Name);
+    void AlreadyUsed();
+    void Glow Eyes();
+    void Open Door();
+    void Callback(EAkCallbackType CallbackType, class UAkCallbackInfo* CallbackInfo);
+    void CustomRemovePickupUI(bool bRemove);
+    void ExecuteUbergraph_Void_Gate(int32 EntryPoint);
+    void OnCompleted__DelegateSignature(bool IsDLC, bool IsChainsBreaking);
+    void ShouldOpenDoor__DelegateSignature(class AVoid_Gate_C* Gate);
+    void StingerTrigger__DelegateSignature();
+    void Event__DelegateSignature();
+};
+
+#endif

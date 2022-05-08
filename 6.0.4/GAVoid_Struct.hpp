@@ -1,0 +1,12 @@
+#ifndef UE4SS_SDK_GAVoid_Struct_HPP
+#define UE4SS_SDK_GAVoid_Struct_HPP
+
+struct FGAVoid_Struct
+{
+    bool Won_3_2ECF44164DE1E641445356A612C4B65E;
+    bool Abandoned_4_44D80E844A400B55E67732B4CF7932DF;
+    int32 Deaths_6_68877D5A4A5A9394D31AEF9ADFC06A6D;
+
+};
+
+#endif
